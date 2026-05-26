@@ -71,7 +71,7 @@ if(initialLoading){
        {/* Background Banner */}
       <div className="absolute inset-0 bg-zinc-900 overflow-hidden">
         <img
-          src="/images/SignInbg.png"
+          src="/images/SignInbg.webp"
           alt=""
           className="w-full h-full object-cover"
         />
