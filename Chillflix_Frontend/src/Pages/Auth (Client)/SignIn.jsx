@@ -44,7 +44,7 @@ export default function NetflixSignIn({setOpenSignIn}) {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="/images/SignInbg.png"
+          src="/images/SignInbg.webp"
           alt="Netflix Background"
           className="w-full h-full object-cover"
         />
