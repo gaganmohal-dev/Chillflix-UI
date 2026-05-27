@@ -44,11 +44,11 @@ function Row({title, movies}){
     return(
         <>
           
-                <div  className=" py-4 ">
+                <div  className=" py-4 px-4 ">
                     {/* Mobile First Layout */}
                     {/* Row 1 */}
 
-                    <div className="p-1 px-3">
+                    <div className="py-4 ">
                         <span className=" text-[clamp(1.5rem,1.8vw,2.8rem)] bebas-neue-regular text-white leading-none">{title}</span>
                     </div>
 
