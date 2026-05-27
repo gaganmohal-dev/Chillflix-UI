@@ -35,7 +35,7 @@ function Navbar({setIsSidebarOpen}){
                     <img src="/images/NetflixLogoSvg.svg" className=" h-12 md:h-16" /> 
                 </div>
              
-                <ul className=" hidden md:flex text-amber-50 justify-center items-center gap-5 cursor-pointer ">
+                <ul className=" hidden md:flex text-amber-50 justify-center items-center gap-8 cursor-pointer ">
                     <li className="hover:text-gray-300"> <Link to="/Home">Home</Link></li>
                     <li className="hover:text-gray-300"><Link to="/movies" className="cursor-pointer">Movies</Link></li>
                     <li className="hover:text-gray-300"><Link to="/my-list" className="cursor-pointer">My List</Link> </li>
