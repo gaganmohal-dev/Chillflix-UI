@@ -100,14 +100,14 @@ if(initialLoading){
           
           {/* Heading */}
           <h1 className="text-4xl md:text-7xl font-extrabold leading-tight">
-            Unlimited movies,
+            Endless Worlds,
             <br />
-            shows and more
+            One Chill.
           </h1>
 
 
           {/* Small Text */}
-          <p className="mt-8 text-lg text-zinc-300">
+          <p className="mt-10 text-lg text-zinc-300">
             Ready to watch? Enter your email to create or restart your membership.
           </p>
 
