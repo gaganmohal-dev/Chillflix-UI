@@ -78,12 +78,12 @@ if(initialLoading){
       </div> 
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/40"></div>
+      <div className="absolute inset-0 bg-black/80"></div>
 
       {/* Navbar */}
       <nav className="relative z-20 flex items-center justify-between px-8 py-6 md:px-16">
         <h1>
-         <img src="/images/NetflixLogoSvg.svg" alt="Netflix logo" className="w-32 md:w-35 lg:w-40 "/>
+         <img src="/images/NetflixLogoSvg.svg" alt="Netflix logo" className="w-32 drop-shadow-[0_0_10px_rgba(248,113,113,0.8)] md:w-35 lg:w-40"/>
         </h1>
 
         <button className="bg-red-600 hover:bg-red-700 transition px-5 py-2 rounded font-semibold cursor-pointer"
