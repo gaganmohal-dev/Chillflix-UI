@@ -11,7 +11,7 @@ const variants = {
   square: "aspect-square",
 }
 
-function Cards({id, movie, className, variant = "portrait"}){
+function Cards({id, movie, className,isTopRated = false, rank, variant = "portrait"}){
     const navigate = useNavigate()
     const {watchList, setWatchList} = useContext(watchListContext)
     const isInWatchlist = watchList?.some(item => item.id === movie.id);
@@ -22,6 +22,30 @@ function Cards({id, movie, className, variant = "portrait"}){
           className={`relative shrink-0 cursor-pointer group  ${className}`}
           onClick={() => navigate(`/Movie/${movie.id}`)}
         >
+             {/* TOP RATED NUMBER */}
+       {isTopRated && (
+            <div
+                className="
+                    absolute left-[-10px]
+                    top-[7rem]
+                    text-[clamp(100px,9vw,140px)]
+                    font-black
+                    leading-none
+                    z-50
+                    pointer-events-none
+                    select-none
+                "   
+                style={{
+                WebkitTextStroke: '3px #e50914',
+                color: 'transparent',
+                textShadow: '4px 4px 16px rgba(229,9,20,0.5)',
+                fontFamily: 'Impact, sans-serif'
+            }}
+            >
+                {rank}
+            </div>
+        )}
+
             <img
                 src={`https://image.tmdb.org/t/p/w500${imagePath}`}
                   className={`w-full ${variants[variant]} object-cover rounded-lg cursor-pointer`}

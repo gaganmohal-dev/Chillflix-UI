@@ -149,7 +149,7 @@ if(initialLoading){
                 
               </button>
             </div>
-            <div className="flex px-10 text-red-500">
+            <div className="flex pl-5 text-red-500">
 
               {errors.email && <p>{errors.email.message}</p> }
             </div>

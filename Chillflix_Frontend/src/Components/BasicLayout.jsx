@@ -1,11 +1,19 @@
 import { useState, useEffect} from "react"
+import { useLocation } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import SideBar from "./SideBar";
 import Footer from "./Footer";
 
 function BasicLayout(){
+
+
      const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const { pathname } = useLocation();
+    
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [pathname])
 
      useEffect(() => {
         if(isSidebarOpen){

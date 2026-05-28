@@ -44,7 +44,7 @@ function Row({title, movies}){
     return(
         <>
           
-                <div  className=" py-4 px-4 ">
+                <div  className={`py-4 pl-4 `}>
                     {/* Mobile First Layout */}
                     {/* Row 1 */}
 
@@ -53,7 +53,22 @@ function Row({title, movies}){
                     </div>
 
                     <div className="relative group">
-                        <div ref={rowRef}  className="text-white scrollbar-hide overflow-y-hidden overflow-x-auto h-[190px] md:h-[220px] lg:h-[250px] xl:h-[200px] 2xl:h-[320px] flex gap-2">
+                        {/* <div ref={rowRef}  className="text-white scrollbar-hide overflow-y-hidden overflow-x-auto h-[190px] md:h-[220px] lg:h-[250px] xl:h-[200px] 2xl:h-[320px] flex gap-2"> */}
+                        <div
+                            ref={rowRef}
+                            className={`
+                                text-white scrollbar-hide overflow-y-hidden overflow-x-auto flex gap-3
+
+                                ${
+                                title === "Top Rated Movies"
+                                ?
+                                "gap-12 h-[200px] md:h-[260px] lg:h-[260px] pl-8"
+                                :
+                                "h-[190px] md:h-[220px] lg:h-[250px] xl:h-[200px] 2xl:h-[320px]"
+                                }
+                            `}
+                            >
+
                            {
                                 movies.length === 0
                                 ?
@@ -61,11 +76,20 @@ function Row({title, movies}){
                                    <SkeletonCardLoader/> 
                                 ))
                                 :
-                                movies.map((movie) => ( 
-                                    <Cards 
-                                        key={movie.id} 
-                                        movie={movie} 
-                                     className="h-full w-[140px] md:w-36 lg:w-[200px] xl:w-35 2xl:w-50" 
+                                movies.map((movie, index) => ( 
+                                    <Cards
+                                        key={movie.id}
+                                        movie={movie}
+                                        rank={index + 1}
+                                        isTopRated={title === "Top Rated Movies"}
+                                        variant={title === "Top Rated Movies" ? "landscape" : "portrait"}
+                                        className={
+                                            title === "Top Rated Movies"
+                                            ?
+                                            "h-full w-[260px] md:w-[320px] lg:w-[330px]"
+                                            :
+                                            "h-full w-[140px] md:w-36 lg:w-[200px] xl:w-35 2xl:w-50"
+                                        }
                                     />
                                 ))
                             }

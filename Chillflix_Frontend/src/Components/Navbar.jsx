@@ -28,7 +28,7 @@ function Navbar({setIsSidebarOpen}){
     return(
     <>
 
-    <header style={{ backgroundColor: `rgba(27, 18, 18,${opacity})` }} className="fixed z-30   w-full  ">
+    <header style={{ backgroundColor: `rgba(27, 18, 18,${opacity})` }} className="fixed z-99   w-full  ">
         <div className=" px-4 py-4  flex justify-between ">
             <div className="flex gap-8 text-small">
                 <div className="flex justify-center items-center">
