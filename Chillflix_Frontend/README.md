@@ -1,79 +1,107 @@
-# 🎬 Netflix UI Clone (React)
+# Chillflix 🎬
 
-A responsive Netflix-inspired frontend built using React and modern component architecture principles.
+A modern movie discovery platform built with React and Tailwind CSS.
 
-This project focuses on building a clean, scalable, and production-style UI while following best practices in React development.
+Chillflix provides a clean, responsive, and immersive browsing experience inspired by modern streaming platforms. The application focuses on performance, intuitive navigation, and a polished user interface across desktop and mobile devices.
 
----
+## Live Demo
+   Before Clicking on this link, Please make sure, you are using Proxy or VPN, as the API I have used to fetch the data is from TMDB so that is not working in INDIA only else it is working everywhere!
 
-## 🚀 Current Features
-
-- Responsive Navbar
-- Sidebar Navigation (Collapsible)
-- Clean Component-Based Architecture
-- Organized Folder Structure
-- Vite-powered React setup
+🔗 [https://chillflix-ui.vercel.app/]
 
 ---
 
-## 🛠️ Tech Stack
+## Features
 
-- React (Functional Components)
-- Vite
-- CSS / Flexbox / Responsive Design
-- ESLint (Code Quality)
-
----
-
-
-## 🎯 Project Goal
-
-The goal of this project is to:
-
-- Master React fundamentals
-- Practice professional component structuring
-- Build scalable UI systems
-- Improve responsive design skills
-- Gradually integrate routing and API data
-
-This project will evolve over time with additional features.
+* Responsive design for desktop, tablet, and mobile devices
+* Modern streaming-platform inspired user interface
+* Dynamic movie and TV content browsing
+* Clean and reusable React component architecture
+* Fast performance powered by Vite
+* Interactive navigation and user-friendly layouts
+* Optimized styling using Tailwind CSS
 
 ---
 
-## 🔮 Planned Improvements
+## Tech Stack
 
-- Movie Card Grid Layout
-- Dynamic Data Rendering
-- React Router Integration
-- API Integration (e.g. TMDB)
-- Hover Animations
-- Improved UX Interactions
+### Frontend
+
+* React
+* JavaScript (ES6+)
+* HTML5
+* Tailwind CSS
+
+### Tooling
+
+* Vite
+* ESLint
+* Git & GitHub
+* Vercel
 
 ---
 
-## ⚙️ Installation
+## Project Structure
+
+```text
+src/
+├── components/
+├── pages/
+├── assets/
+├── Loaders/
+├── Contexts
+├── layouts/
+└── App.jsx
+```
+
+---
+
+## Highlights
+
+* Built using a component-driven architecture for maintainability and scalability.
+* Focused on responsive design principles to ensure a consistent experience across devices.
+* Structured for future feature expansion and integration with external APIs.
+* Deployed and optimized for production using Vercel.
+
+---
+
+## Future Enhancements
+
+* Advanced search functionality
+* Personalized recommendations
+* User authentication
+* Watchlist and favorites system
+* Enhanced animations and transitions
+* Additional content filtering options
+
+---
+
+## Installation
 
 Clone the repository:
 
-git clone <repo-link>
+```bash
+git clone <repository-url>
+```
 
 Install dependencies:
 
+```bash
 npm install
+```
 
-Run development server:
+Start the development server:
 
+```bash
 npm run dev
+```
 
 ---
 
-## 📸 Preview
+## Author
 
-(You can add screenshots here later)
+**Gagan Mohal**
 
----
+Frontend Developer passionate about building modern, responsive, and user-focused web applications.
 
-## 📌 Status
-
-🚧 Work in Progress
-
+GitHub: https://github.com/gaganmohal-dev
