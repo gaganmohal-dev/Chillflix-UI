@@ -5,7 +5,7 @@ A modern movie discovery platform built with React and Tailwind CSS.
 Chillflix provides a clean, responsive, and immersive browsing experience inspired by modern streaming platforms. The application focuses on performance, intuitive navigation, and a polished user interface across desktop and mobile devices.
 
 ## Live Demo
-   Before Clicking on this link, Please make sure, you are using Proxy or VPN, as the API I have used to fetch the data is from TMDB so that is not working in INDIA only else it is working everywhere!
+   Before Clicking on this link, **Please make sure, you are using Proxy or VPN**, as the API I have used to fetch the data is from TMDB so that is not working in INDIA only else it is working everywhere!
 
 🔗 [https://chillflix-ui.vercel.app/]
 
