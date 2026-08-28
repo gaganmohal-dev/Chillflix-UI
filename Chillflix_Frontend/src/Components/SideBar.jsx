@@ -27,7 +27,7 @@ function SideBar({isSidebarOpen}){
 
     return(
         <>
-            {isSidebarOpen && <div className="fixed top-0 left-0 h-screen w-[50%] bg-netflix-gray z-50">
+            {isSidebarOpen && <div className="fixed top-0 left-0 h-screen w-[50%] bg-netflix-gray z-101">
                 <div className="h-full flex flex-col justify-between text-netflix-light-gray">
                 <div className="flex  items-center gap-4  p-4">
                     <img src="/images/profile.svg" alt="" className="h-9 cursor-pointer"/>
